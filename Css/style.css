@@ -1,19 +1,24 @@
 body{
 	margin: 0;
+	background-color: black;
 }
 
 .container{
 	width: 80%;
 	margin: auto;
-	overflow: hidden;
+	overflow: visible;
 	border-top: 0px;
+}
+
+.background{
+	background-color: black;
 }
 
 #mainHeader{
 	background-color: #ff198c;
 	color: white;
-	border-radius: 50px;
-	box-shadow: 0px 5px 5px #989898;	
+	border-radius: 25px;
+	box-shadow: 0px 5px 5px #333;	
 }
 
 #mainHeader h1{
@@ -25,9 +30,8 @@ body{
 
 #navBar ul{
 	background-color: #111;
-	border-radius: 50px;
-	border: 0px;
-	box-shadow: 0px 5px 5px #989898;
+	border-radius: 25px;
+	box-shadow: 0px 5px 5px #333;
 	color: white;
 	margin: 0;
 	overflow: hidden;
@@ -57,23 +61,42 @@ body{
 }
 
 .active{
-	background-color: #333;
+	background-color: #000;
 }
 
 #mainSection{
 	margin: 0;
 	background-color: teal;
-	box-shadow: 0px 5px 5px #989898;
-	font-family: sans-serif, Aerial;
+	box-shadow: 0px 5px 5px #333;
 	padding: 16px;
-	border-radius: 50px;
-	border: 0px;
+	border-radius: 25px;
 }
 
 #mainSection p{
-	font-family: sans-serif, Aerial;
+	font-family: Sans-serif, Aerial;
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
 
+}
+
+#mainMain{
+	margin: 0;
+	background-color: #14FFFB;
+	border-radius: 50px;
+	padding: 8px;
+	box-shadow: 0px 5px 5px #333;
+}
+
+#mainMain p{
+	font-family: sans-serif, Aerial;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#mainFooter p{
+	text-align: center;
+	color: white;
+	font-family: sans-serif, Aerial;
 }
