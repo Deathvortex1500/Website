@@ -8,12 +8,18 @@ body{
 }
 
 .container{
-	margin: auto;
-	text-align: center;
-	width: 80%;
 	font-family: aerial, helvetica, sans-serif;
 	color: white;
+	margin: auto;
+	width: 80%;
 	overflow: visible;
+}
+
+#mainHeader{
+	position: relative;
+	animation-name: header;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
 }
 
 #mainHeader{
@@ -22,13 +28,7 @@ body{
 	text-align: center;
 	background-color: #1875E6;
 	border-radius: 25px;
-}
-
-#mainHeader{
 	position: relative;
-	animation-name: header;
-	animation-duration: 3s;
-	animation-fill-mode: forwards;
 }
 
 #navBar{
@@ -44,6 +44,7 @@ body{
 	list-style-type: none;
 	color: white;
 	margin: 0;
+	margin-top: 10px;
 	margin-top: 10px;
 	overflow: hidden;
 }
@@ -68,54 +69,16 @@ body{
 	background-color: #1875E6;
 }
 
-#main1{
-	position: relative;
-	animation-name: mainOne;
-	animation-duration: 3s;
-	animation-fill-mode: forwards;
-}
-
-#main1{
-	margin-top: 25px;
-	padding: 16px;
-	font-size: 16px;
-	border: 1px solid #04172E;
+#section{
+	margin-top: 100px;
+	text-align: center;
+	border: 1px solid ##04172E;
 	border-radius: 25px;
-}
+	display: flex;
+	justify-content: space-around;
 
-#main2{
 	position: relative;
-	animation-name: mainTwo;
-	animation-duration: 3s;
-	animation-fill-mode: forwards;
-}
-
-#main2{
-	margin-top: 12.5px;
-	padding: 16px;
-	font-size: 16px;
-	border: 1px solid #04172E;
-	border-radius: 25px;
-}
-
-#main3{
-	position: relative;
-	animation-name: mainThree;
-	animation-duration: 3s;
-	animation-fill-mode: forwards;
-}
-
-#main3{
-	margin-top: 12.5px;
-	padding: 16px;
-	font-size: 16px;
-	border: 1px solid #04172E;
-	border-radius: 25px;
-}
-
-#mainFooter{
-	position: relative;
-	animation-name: footer;
+	animation-name: section;
 	animation-duration: 3s;
 	animation-fill-mode: forwards;
 }
@@ -124,8 +87,13 @@ body{
 	background-color: #04172E;
 	border-radius: 25px;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 299px;
 	padding: 10px;
+
+	position: relative;
+	animation-name: footer;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
 }
 
 /* Animations */
@@ -136,21 +104,11 @@ body{
 }
 
 @keyframes navbar{
-	0%	 {opacity: 0}
+	0%   {opacity: 0}
 	100% {opacity: 100}
 }
 
-@keyframes mainOne{
-	0%   {left: -1500px}
-	100% {left: 0px}
-}
-
-@keyframes mainTwo{
-	0%   {right: -1500px}
-	100% {right: 0px}
-}
-
-@keyframes mainThree{
+@keyframes section{
 	0%   {left: -1500px}
 	100% {left: 0px}
 }
